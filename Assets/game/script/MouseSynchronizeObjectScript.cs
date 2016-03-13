@@ -2,16 +2,19 @@
 using System.Collections;
 
 public class MouseSynchronizeObjectScript : MonoBehaviour {
-	// 位置座標 
+
+	// 適用したオブジェクトの位置座標の名前をpositionと置く 
 	private Vector3 position; 
-	// スクリーン座標をワールド座標に変換した位置座標 
+	// スクリーン座標をワールド座標に変換した位置座標を以下のように置く 
 	private Vector3 screenToWorldPointPosition; 
-	// Use this for initialization 
+	//ここで出現させたいオブジェクトを選択欄をスクリプト内では以下のように置く
+	public GameObject targetprefab;
+	//弾を発射したときの時間を入れる関数
+	private float bulletintervalTime;
 	void Start () { 
 	 	 
 	} 
-		 
-	// Update is called once per frame 
+		
 	void Update () { 
 		// Vector3でマウス位置座標を取得する 
 		position = Input.mousePosition; 
@@ -20,7 +23,17 @@ public class MouseSynchronizeObjectScript : MonoBehaviour {
 		// マウス位置座標をスクリーン座標からワールド座標に変換する 
 		screenToWorldPointPosition = Camera.main.ScreenToWorldPoint(position); 
 		// ワールド座標に変換されたマウス座標を代入 
-		gameObject.transform.position = screenToWorldPointPosition; 
+		gameObject.transform.position = screenToWorldPointPosition;
+		//弾が出過ぎないように発射した時間を計る
+		bulletintervalTime += Time.deltaTime;
+		//左クリックしたとき
+		if(Input.GetMouseButton(0)){
+			if(bulletintervalTime>=0.2f){
+				bulletintervalTime=0f;
+			//targetprefabで選択されたオブジェクトを出現させる
+			Instantiate(targetprefab,gameObject.transform.position,gameObject.transform.rotation);
+				}
+			}
 		} 
 } 
 
