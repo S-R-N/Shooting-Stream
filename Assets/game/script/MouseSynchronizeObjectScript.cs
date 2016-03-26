@@ -19,15 +19,16 @@ public class MouseSynchronizeObjectScript : MonoBehaviour {
 		// Vector3でマウス位置座標を取得する 
 		position = Input.mousePosition; 
 		// Z軸修正 
-		position.z = 10f; 
+		position.z = 11f; 
 		// マウス位置座標をスクリーン座標からワールド座標に変換する 
 		screenToWorldPointPosition = Camera.main.ScreenToWorldPoint(position); 
 		// ワールド座標に変換されたマウス座標を代入 
 		gameObject.transform.position = screenToWorldPointPosition;
-		//弾が出過ぎないように発射した時間を計る
+		//発射した時間を計る
 		bulletintervalTime += Time.deltaTime;
 		//左クリックしたとき
 		if(Input.GetMouseButton(0)){
+			//弾が出過ぎないように0.2秒以下は反応しない
 			if(bulletintervalTime>=0.2f){
 				bulletintervalTime=0f;
 			//targetprefabで選択されたオブジェクトを出現させる

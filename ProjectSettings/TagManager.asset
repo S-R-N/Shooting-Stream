@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - marker
+  - Marker
   - P-bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX

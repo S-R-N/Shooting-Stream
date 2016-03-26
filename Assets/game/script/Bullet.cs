@@ -5,7 +5,7 @@ public class Bullet : MonoBehaviour {
 
 	// 適用したオブジェクトの位置座標の名前をpositionと置く
 	private Vector3 position;
-
+	//
 	//private GameObject clonefind;
 	void Start () {
 
@@ -16,11 +16,5 @@ public class Bullet : MonoBehaviour {
 		transform.position += new Vector3 (0f, 0f, 1f);
 		//Add Componentでスクリプトをつけたゲームオブジェクトを削除(prefab化しておくこと)
 		Destroy (gameObject, 3f);
-	}
-
-	void OnCollisionEnter(Collision collision){
-		if(collision.gameObject.tag=="Enemy"){
-			Destroy (gameObject,0f);
-		}
 	}
 }
