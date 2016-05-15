@@ -7,6 +7,8 @@ TagManager:
   - Marker
   - P-bullet
   - Enemy
+  - marker
+  - E-bullet
   layers:
   - Default
   - TransparentFX
@@ -43,4 +45,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: lifeber
+    uniqueID: 1337554063
     locked: 0
