@@ -39,9 +39,13 @@ sysinfo.txt
 # Build
 *.apk
 *.unitypackage
+*.pdb
+*.exe
+/Shooting-Stream_Data/
+
 
 # for others
-
+/Assets/Standard Assets/
 *.log #log files, for some plugins
 *.pyc #python bytecode cache, for some plugins.
 sysinfo.txt #Unity3D Generated File On Crash Reports
