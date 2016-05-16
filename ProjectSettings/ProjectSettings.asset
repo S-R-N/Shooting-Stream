@@ -10,15 +10,15 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: densan
-  productName: Shooting Stream
+  productName: Shooting Stream v1
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
   m_VirtualRealitySplashScreen: {fileID: 0}
   defaultScreenWidth: 565
   defaultScreenHeight: 318
-  defaultScreenWidthWeb: 960
-  defaultScreenHeightWeb: 600
+  defaultScreenWidthWeb: 565
+  defaultScreenHeightWeb: 318
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   m_ActiveColorSpace: 0
@@ -173,12 +173,18 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 0}
+      m_Icon: {fileID: 2800000, guid: 5a96d38fae790a24eb291f3a93d6200f, type: 3}
       m_Width: 128
       m_Height: 128
-  m_BuildTargetBatching: []
-  m_BuildTargetGraphicsAPIs: []
-  webPlayerTemplate: APPLICATION:Default
+  m_BuildTargetBatching:
+  - m_BuildTarget: Web
+    m_StaticBatching: 1
+    m_DynamicBatching: 1
+  m_BuildTargetGraphicsAPIs:
+  - m_BuildTarget: WebPlayer
+    m_APIs: 0200000001000000
+    m_Automatic: 0
+  webPlayerTemplate: APPLICATION:No Context Menu
   m_TemplateCustomTags: {}
   wiiUTitleID: 0005000011000000
   wiiUGroupID: 00010000

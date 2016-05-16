@@ -80,7 +80,7 @@ public class GameText : MonoBehaviour {
                 if (GUI.Button(new Rect(300, 230, 150, 30), "Twitterへ投稿"))
                 {
                     // WebブラウザのTwitter投稿画面を開く 
-                    Application.OpenURL("http://twitter.com/intent/tweet?text=" + WWW.EscapeURL(text.text+"\n#shootingstream"));
+                    Application.OpenURL("http://twitter.com/intent/tweet?text=" + WWW.EscapeURL(text.text+"\nソースコード・ゲームDLはこちら https://github.com/S-R-N/Shooting-Stream\n#shootingstream"));
                 }
                 /*
                 if (GUI.Button(new Rect(380, 230, 150, 30), "Lineへ共有"))
@@ -88,6 +88,7 @@ public class GameText : MonoBehaviour {
                     // Lineに投稿 
                     Application.OpenURL("http://line.naver.jp/R/msg/text/?" + WWW.EscapeURL(text.text, System.Text.Encoding.UTF8));
                 }
+		//なぜかPCではLineはうまく動かなかったの実装しない方向で
                 */
             }
         }
