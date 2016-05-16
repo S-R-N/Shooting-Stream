@@ -12,4 +12,4 @@
 3回当たると終了、どれだけスコアが良くてもクリア失敗です
 
 ゲーム本体のDLはこちら↓
-https://www.dropbox.com/s/pa0v6ddxd4wrk82/Shooting-Stream.zip?dl=0
+https://www.dropbox.com/s/651nr1pc351131h/Shooting-Stream.zip?dl=0
