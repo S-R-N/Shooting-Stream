@@ -22,4 +22,4 @@
 
 ゲーム本体のDLはこちら↓
 
-https://www.dropbox.com/s/651nr1pc351131h/Shooting-Stream.zip?dl=0
+https://github.com/S-R-N/Shooting-Stream/releases
